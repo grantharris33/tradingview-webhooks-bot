@@ -12,6 +12,7 @@ Until then, if you run into any bugs let me know!
 from actions import send_order, parse_webhook
 from auth import get_token
 from flask import Flask, request, abort
+from tradingview-data import WebDriver
 
 # Create Flask object called app.
 app = Flask(__name__)
@@ -21,6 +22,10 @@ app = Flask(__name__)
 @app.route('/')
 def root():
     return 'online'
+
+@app.route('/test')
+def test():
+    return
 
 
 @app.route('/webhook', methods=['POST'])

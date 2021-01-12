@@ -24,4 +24,4 @@ USER appuser
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 WORKDIR /app/tradingview-webhooks-bot
 # CMD ["python", "webhook-bot.py"]
-RUN ./install.sh
+RUN ./gunicorn.sh

@@ -2,3 +2,5 @@
 flask==1.1.2
 gunicorn==20.0.4
 ccxt==1.40.30
+beautifulsoup4==4.9.3
+selenium==3.141.0
